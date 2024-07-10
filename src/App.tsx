@@ -1,8 +1,8 @@
-import Btn from "./button";
+import Btn from "./components/button";
 
 function App() {
 	return (
-		<p bg='red'>
+		<p>
 			more
       <Btn />
 		</p>

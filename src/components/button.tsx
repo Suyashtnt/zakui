@@ -1,8 +1,7 @@
 const Button = () => {
 	return (
-		<button className="bg-red p3  m10">
-			more
-
+		<button className="bg-red p5  m10 border-0" text='white'>
+      testing
 		</button>
 	);
 };

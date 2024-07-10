@@ -2,8 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 
-import 'uno.css'
-import 'virtual:unocss-devtools' 
+import 'virtual:uno.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

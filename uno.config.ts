@@ -1,9 +1,12 @@
 // uno.config.ts
-import { defineConfig, presetAttributify } from 'unocss'
+import { defineConfig, presetAttributify, presetUno } from 'unocss'
 
 export default defineConfig({
   rules: [
     ['m-1', { margin: '1px' }],
   ],
-  presets: [presetAttributify()],
+  presets: [
+    presetUno(),
+    presetAttributify(),
+  ],
 })
