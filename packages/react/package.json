@@ -2,23 +2,25 @@
   "name": "zakui",
   "version": "0.0.18",
   "type": "module",
-  "files": ["dist"],
-  "main": "./dist/zakui.umd.cjs",
-  "module": "./dist/zakui.js",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/zakui.js",
-      "require": "./dist/zakui.umd.cjs",
+      "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
+    },
+    "./components/*": {
+      "import": "./dist/components/*.mjs",
+      "types": "./dist/components/*.d.ts"
     }
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "unbuild"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -26,10 +28,8 @@
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.2.2",
-    "unocss": "^0.61.3",
-    "vite": "^5.3.1",
-    "vite-plugin-dts": "^3.9.1"
+    "unbuild": "^2.0.0",
+    "unocss": "^0.61.3"
   }
 }
