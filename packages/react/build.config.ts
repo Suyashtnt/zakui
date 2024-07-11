@@ -6,7 +6,12 @@ export default defineBuildConfig({
             builder: "mkdist",
             input: "./src",
             outDir: "./dist",
+            esbuild: {
+                jsx: "automatic",
+            }
         },
     ],
+    externals: ['react', 'react-dom'],
+    name: "zakui",
     declaration: "compatible"
 })
