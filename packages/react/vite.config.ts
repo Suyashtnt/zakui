@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import UnoCSS from "unocss/vite";
-import { resolve } from 'path'
-import dts from 'vite-plugin-dts'
+import { resolve } from "path";
+import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -23,5 +23,11 @@ export default defineConfig({
 		},
 	},
 
-	plugins: [react(), UnoCSS(), dts()],
+	plugins: [
+		react(),
+		UnoCSS(),
+		dts({
+			insertTypesEntry: true,
+		}),
+	],
 });
