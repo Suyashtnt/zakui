@@ -1,6 +1,6 @@
 const Button = () => {
 	return (
-		<button className="bg-blue p5 m10 border-0">
+		<button className="bg-rose p5 m10 border-0">
       testing
 		</button>
 	);
