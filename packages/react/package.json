@@ -1,6 +1,6 @@
 {
   "name": "zakui",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/zakui.umd.cjs",
